@@ -1,0 +1,300 @@
+
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+<meta charset="UTF-8">
+<title>Менің профилім</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f4f8;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* HEADER */
+.site-header{
+    background:#fff;
+    padding:16px 20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    border-bottom:1px solid #e5e7eb;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.logo{
+    font-weight: 800;
+    color:#4f46e5;
+}
+
+.menu{
+    display:flex;
+    gap:14px;
+}
+
+.menu a{
+    text-decoration:none;
+    color:#4f46e5;
+    font-weight:700;
+    padding:8px 14px;
+    border-radius:8px;
+    transition:0.3s;
+}
+
+.menu a:hover{
+    background:#4f46e5;
+    color:white;
+}
+
+/* MAIN */
+main{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:25px;
+    padding:40px 15px;
+}
+
+/* PROFILE CARD */
+.card {
+    background-color: white;
+    width: 380px;
+    padding: 25px;
+    border-radius: 18px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+    text-align: center;
+}
+
+.profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #4f46e5;
+    margin-bottom: 15px;
+}
+
+.status {
+    color: #6b7280;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.info-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.info-table td {
+    padding: 8px;
+    border-bottom: 1px solid #e5e7eb;
+    font-size: 14px;
+}
+
+.label {
+    font-weight: bold;
+}
+
+/* ===== CALENDAR ===== */
+.calendar-table{
+    width: 380px;
+    background:#fff;
+    border-radius:18px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+    padding:20px;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+.calendar-title{
+    text-align:center;
+    font-weight:800;
+    color:#4f46e5;
+    padding:12px 0 16px 0;
+    font-size:20px;
+}
+
+.calendar-table th{
+    padding:10px 0;
+    font-size:13px;
+    color:#6b7280;
+    background:#f9fafb;
+    border-bottom:1px solid #e5e7eb;
+}
+
+.calendar-table td{
+    height:60px;
+    text-align:center;
+    vertical-align:top;
+    border:1px solid #e5e7eb;
+    font-weight:800;
+    padding:6px 4px;
+    background:#fff;
+}
+
+.calendar-table td small{
+    display:block;
+    margin-top:6px;
+    font-size:11px;
+    font-weight:600;
+}
+
+.holiday{
+    background:#fee2e2 !important;
+    color:#991b1b;
+    cursor:pointer;
+}
+
+.empty{
+    background:#fff;
+}
+
+/* Календарь + Мереке қатар */
+.calendar-section{
+    display:flex;
+    gap:20px;
+}
+
+/* Мереке туралы */
+.panel{
+    width: 380px;
+    background:#fff;
+    padding:20px;
+    border-radius:18px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+}
+
+.panel h3{
+    color:#4f46e5;
+    margin-top:0;
+}
+
+/* Байланыс төменде */
+.contacts{
+    width: 380px;
+    background:#fff;
+    padding:20px;
+    border-radius:18px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+    text-align:center;
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    background:#e5e7eb;
+    padding:10px;
+}
+
+@media (max-width: 900px){
+    .calendar-section{
+        flex-direction:column;
+        align-items:center;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header class="site-header">
+    <div class="logo">MyPortfolio</div>
+    <nav class="menu">
+        <a href="myfrofile1.html">Басты бет</a>
+        <a href="myprofile3.html">Блог</a>
+    </nav>
+</header>
+
+<main>
+
+<!-- Профиль -->
+<div class="card">
+    <img src="myphoto.jpg.jpeg" alt="Менің профиль фотом" class="profile-img">
+    <h1>Менің профильім</h1>
+    <h2>Ерболқызы Амина</h2>
+    <p class="status">2-курс студенті</p>
+
+    <table class="info-table">
+        <tr><td class="label">Жынысы:</td><td>Әйел</td></tr>
+        <tr><td class="label">Туған күні:</td><td>31.08.2007</td></tr>
+        <tr><td class="label">Оқу орны:</td><td>Еуразия Ұлттық Университеті</td></tr>
+        <tr><td class="label">Мамандық:</td><td>Информатика мұғалімі</td></tr>
+        <tr><td class="label">Мекен жайы:</td><td>Бараева 18</td></tr>
+        <tr><td class="label">Телефон номері:</td><td>87752690209</td></tr>
+    </table>
+</div>
+
+<!-- Календарь + Мереке -->
+<div class="calendar-section">
+
+<table class="calendar-table">
+<tr>
+<td colspan="7" class="calendar-title">Наурыз</td>
+</tr>
+
+<tr>
+<th>Дс</th><th>Сс</th><th>Ср</th><th>Бс</th><th>Жм</th><th>Сн</th><th>Жс</th>
+</tr>
+
+<tr>
+<td class="empty"></td><td class="empty"></td><td class="empty"></td>
+<td class="empty"></td><td class="empty"></td><td class="empty"></td>
+<td>1</td>
+</tr>
+
+<tr>
+<td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td>
+<td class="holiday" onclick="showHoliday('8 наурыз — Халықаралық әйелдер мерекесі.')">
+8<small>8 наурыз</small>
+</td>
+</tr>
+
+<tr>
+<td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td>
+</tr>
+
+<tr>
+<td>16</td><td>17</td><td>18</td><td>19</td><td>20</td>
+<td class="holiday">21<small>Наурыз</small></td>
+<td class="holiday" onclick="showHoliday('22 наурыз — Ұлыстың ұлы күні, Наурыз мейрамы.')">
+22<small>Наурыз</small>
+</td>
+</tr>
+</table>
+
+<div class="panel">
+<h3>Мереке туралы</h3>
+<p id="holidayText"></p>
+</div>
+
+</div>
+
+<!-- Байланыс төменде -->
+<div class="contacts">
+<h3>Байланыс</h3>
+<p>Телефон: 87752690209</p>
+<p>Instagram: @_aminaae</p>
+</div>
+
+</main>
+
+<footer>
+<p>© 2026 Ерболқызы Амина</p>
+</footer>
+
+<script>
+function showHoliday(text){
+    document.getElementById("holidayText").textContent = text;
+}
+</script>
+
+</body>
+</html>
